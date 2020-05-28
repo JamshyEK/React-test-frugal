@@ -1,0 +1,6 @@
+{
+    "name": "Store Details",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./StoreDetails.js"
+  }

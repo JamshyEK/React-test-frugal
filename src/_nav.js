@@ -24,6 +24,18 @@ export default {
       icon: 'icon-location-pin',
 
     },
+    {
+      name: 'Store Details',
+      url: '/storedetails',
+      icon: 'icon-basket-loaded',
+
+    },
+    {
+      name: 'Login',
+      url: '/poggylogin',
+      icon: 'icon-user',
+
+    },
 
 
 
