@@ -39,9 +39,10 @@ class App extends Component {
     );
   }
 }
-export default connect(
-  mapStateToProps,
-  // provide redux store data to App component
-  mapDispachToProps
-  // can use to dispatch actions from app component to redux store
-)(App)
+// export default connect(
+//   mapStateToProps,
+//   // provide redux store data to App component
+//   mapDispachToProps
+//   // can use to dispatch actions from app component to redux store
+// )(App)
+export default App
