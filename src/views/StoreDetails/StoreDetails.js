@@ -93,11 +93,11 @@ class StoreDetails extends Component {
                               onClick={() =>
                                 this.handleShowView({ item: item })
                               }></i>
-                            {/* <StoreViewModal
+                            <StoreViewModal
                                             show={this.state.storeShow}
                                             handleClose={this.handleCloseView}
                                             storeDtls={this.state.storeDtls}
-                                          /> */}
+                                          />
                           </td>
 
                         </tr>

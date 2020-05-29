@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import {
-    // Card,
-    Container,
     Row,
     Col,
     Button,
@@ -10,11 +8,9 @@ import {
     Tab,
     Table,
     Modal,
-    NavDropdown,
-    Navbar
   } from 'react-bootstrap'
 
-class StoreView extends Component {
+class StoreViewModal extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -23,7 +19,8 @@ class StoreView extends Component {
     }
 
     render() {
-        const data = this.props.storeDtls.item
+        console.log("=====================>",this.props.storeDtls)
+        const data = this.props.storeDtls
         return (
             <div>
                 <div>
@@ -125,4 +122,4 @@ class StoreView extends Component {
 
 
 }
-export default StoreView;
+export default StoreViewModal;
