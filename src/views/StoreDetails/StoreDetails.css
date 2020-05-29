@@ -1,3 +1,6 @@
 .storeViewIcon{
     text-align: center;
 }
+.storeCap{
+    text-transform: capitalize;
+    }

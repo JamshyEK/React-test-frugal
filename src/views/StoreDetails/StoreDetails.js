@@ -46,7 +46,7 @@ class StoreDetails extends Component {
     }
 
     catch (err) {
-      console.log("==============222222222222222")
+      
     }
 
 
@@ -83,11 +83,11 @@ class StoreDetails extends Component {
                       {this.state.storeData.map((item, i) => (
                         <tr key={i}>
                           <td>{i + 1}</td>
-                          <td>{item.type}</td>
-                          <td>{item.name}</td>
-                          <td>{item.dist}</td>
-                          <td>{item.mob}</td>
-                          <td>{item.status}</td>
+                          <td className="storeCap">{item.type}</td>
+                          <td className="storeCap">{item.name}</td>
+                          <td className="storeCap">{item.dist}</td>
+                          <td className="storeCap">{item.mob}</td>
+                          <td className="storeCap">{item.status}</td>
                           <td className="storeViewIcon">
                             <i className="fa fa-eye fa-lg "
                               onClick={() =>
