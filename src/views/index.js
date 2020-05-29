@@ -30,6 +30,7 @@ import { Colors, Typography } from './Theme';
 import Widgets from './Widgets';
 import StoreDetails from './StoreDetails';
 import PoggyLogin from './PoggyLogin';
+import PoggyUsers from './PoggyUsers';
 
 export {
   Badges,
@@ -71,6 +72,7 @@ export {
   Paginations,
   Location,
   StoreDetails,
-  PoggyLogin
+  PoggyLogin,
+  PoggyUsers
 };
 
