@@ -11,20 +11,46 @@ import {
     Container
 } from 'react-bootstrap'
 import './StoreViewModal.css'
+import StoreActiveModal from '../StoreDetails/StoreActiveModal'
+import StoreSuspendModal from '../StoreDetails/StoreSuspendModal'
 
 class StoreViewModal extends Component {
     constructor(props) {
         super(props)
         this.state = {
-
+            storeActiveShow: false,
+            storeSuspndShow: false,
         }
     }
+
+    handleActiveView = () => {
+        this.setState({
+            storeActiveShow: true,
+
+        })
+    }
+
+    handleCloseView = () => {
+        this.setState({ storeActiveShow: false })
+    }
+
+    handleSuspendView = () => {
+        this.setState({
+            storeSuspndShow: true,
+
+        })
+    }
+
+    handleCloseSuspnd = () => {
+        this.setState({ storeSuspndShow: false })
+    }
+
 
     render() {
         console.log("=====================>", this.props.storeDtls && this.props.storeDtls.item)
         const data = this.props.storeDtls && this.props.storeDtls.item
         return (
-            <div className="abc">
+            <div>
                 <div className="StoreModalDiv">
                     <Modal show={this.props.show}
                         onHide={this.props.handleClose}
@@ -214,16 +240,40 @@ class StoreViewModal extends Component {
                                     <Tab.Pane eventKey="third">
                                         <div>
                                             <div>
-                                                <h6 style={{ textAlign: "center" }}><b>Are you sure you want to change the status?</b></h6>
+                                                <h6 style={{ textAlign: "center",marginTop:"20px" }}><b>Are you sure you want to change the status?</b></h6>
                                             </div>
                                             <Row style={{ marginTop: "50px" }}>
                                                 <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                                                    <Button className="storeActivBtn">Active</Button>
+                                                    <Button
+                                                        className="storeActivBtn"
+                                                        onClick={() =>
+                                                            this.handleActiveView()
+                                                        }
+                                                    >
+                                                        ACTIVE
+                                                    </Button>
+                                                    <StoreActiveModal
+                                                        show={this.state.storeActiveShow}
+                                                        handleClose={this.handleCloseView}
+
+                                                    />
                                                 </Col>
                                                 {/* <Col xs={12} sm={12} md={4} lg={4}>
                                                 </Col> */}
                                                 <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                                                    <Button className="storeSuspndBtn">Suspend</Button>
+                                                    <Button
+                                                        className="storeSuspndBtn"
+                                                        onClick={() =>
+                                                            this.handleSuspendView()
+                                                        }
+                                                    >
+                                                        SUSPEND
+                                                        </Button>
+                                                    <StoreSuspendModal
+                                                        show={this.state.storeSuspndShow}
+                                                        handleClose={this.handleCloseSuspnd}
+
+                                                    />
                                                 </Col>
                                             </Row>
                                         </div>
