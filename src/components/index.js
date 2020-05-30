@@ -20,7 +20,7 @@ import {
 } from './Base';
 
 import { ButtonDropdowns, ButtonGroups, Buttons, BrandButtons } from './Buttons';
-import Location from './Location'
+import Location from '../screens/Location/index'
 import Charts from './Charts';
 import Dashboard from './Dashboard';
 import { CoreUIIcons, Flags, FontAwesome, SimpleLineIcons } from './Icons';
