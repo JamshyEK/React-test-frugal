@@ -42,14 +42,5 @@ export default {
       icon: 'icon-user',
 
     },
-
-
-
-
-
-
-
-
-
   ],
 };

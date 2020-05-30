@@ -23,7 +23,7 @@ import {
 import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 import { getStyle, hexToRgba } from '@coreui/coreui/dist/js/coreui-utilities'
 
-const Widget03 = lazy(() => import('../../views/Widgets/Widget03'));
+const Widget03 = lazy(() => import('../../components/Widgets/Widget03'));
 
 const brandPrimary = getStyle('--primary')
 const brandSuccess = getStyle('--success')
@@ -382,7 +382,8 @@ const mainChart = {
   datasets: [
     {
       label: 'My First dataset',
-      backgroundColor: hexToRgba(brandInfo, 10),
+      backgroundColor: 'red',
+      // backgroundColor: hexToRgba(brandInfo, 10),
       borderColor: brandInfo,
       pointHoverBackgroundColor: '#fff',
       borderWidth: 2,
