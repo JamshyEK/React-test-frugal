@@ -2,9 +2,9 @@ import React from 'react';
 
 
 const Dashboard = React.lazy(() => import('./components/Dashboard'));
-const StoreDetails = React.lazy(() => import('./components/StoreDetails'));
+const StoreDetails = React.lazy(() => import('./screens/StoreDetails'));
 const PoggyLogin = React.lazy(() => import('./components/PoggyLogin'));
-const PoggyUsers = React.lazy(() => import('./components/PoggyUsers'));
+const PoggyUsers = React.lazy(() => import('./screens/PoggyUsers'));
 const location = React.lazy(() => import('./containers/LocationContainer'))
 // const Location = React.lazy(() => import('./views/Location'))
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Table, Card } from 'react-bootstrap'
 import './StoreDetails.css'
-import StoreViewModal from '../StoreDetails/StoreViewModal'
+import StoreViewModal from '../StoreDetails/StoreViewModel'
 
 class StoreDetails extends Component {
 

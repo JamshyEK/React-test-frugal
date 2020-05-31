@@ -3,7 +3,7 @@ import { BrowserRouter, Router, Route, Switch, HashRouter, Redirect } from 'reac
 import { createBrowserHistory } from 'history'
 import Dashboard from '../containers/DashboardContainer';
 import Login from '../containers/LoginContainer'
-import PoggyUsers from '../components/PoggyUsers'
+import PoggyUsers from '../screens/PoggyUsers'
 import DefaultLayout from '../containers/DefaultLayout'
 
 var history = createBrowserHistory()

@@ -10,7 +10,7 @@ import {
     Modal,
     Container
 } from 'react-bootstrap'
-import './StoreViewModal.css'
+import './StoreViewModel.css'
 import StoreActiveModal from '../StoreDetails/StoreActiveModal'
 import StoreSuspendModal from '../StoreDetails/StoreSuspendModal'
 

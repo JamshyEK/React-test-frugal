@@ -28,9 +28,9 @@ import { Alerts, Badges, Modals } from './Notifications';
 import { Login, Page404, Page500, Register } from './Pages';
 import { Colors, Typography } from './Theme';
 import Widgets from './Widgets';
-import StoreDetails from './StoreDetails';
+// import StoreDetails from './StoreDetails';
 import PoggyLogin from './PoggyLogin';
-import PoggyUsers from './PoggyUsers';
+// import PoggyUsers from './PoggyUsers';
 
 export {
   Badges,
@@ -71,8 +71,8 @@ export {
 
   Paginations,
   Location,
-  StoreDetails,
+  // StoreDetails,
   PoggyLogin,
-  PoggyUsers
+  // PoggyUsers
 };
 
