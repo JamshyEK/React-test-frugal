@@ -46,7 +46,7 @@ class StoreDetails extends Component {
     }
 
     catch (err) {
-
+      
     }
 
 
@@ -94,10 +94,10 @@ class StoreDetails extends Component {
                                 this.handleShowView({ item: item })
                               }></i>
                             <StoreViewModal
-                              show={this.state.storeShow}
-                              handleClose={this.handleCloseView}
-                              storeDtls={this.state.storeDtls}
-                            />
+                                            show={this.state.storeShow}
+                                            handleClose={this.handleCloseView}
+                                            storeDtls={this.state.storeDtls}
+                                          />
                           </td>
 
                         </tr>

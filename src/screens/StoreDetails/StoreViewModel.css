@@ -1,0 +1,72 @@
+.storeModalCap{
+    text-transform: capitalize;
+    }
+    .storeModalTbl {
+          overflow: scroll !important;
+        height: 350px !important;
+        overflow-x: hidden !important;
+        width: 100% !important; 
+    }
+    
+    .storeActivBtn {
+        width: 100px;
+        float: right;
+        background-color: #73a1ff;
+        color: white;
+        border-color: #73a1ff !important;
+     
+      }
+      .storeActivBtn:hover {
+        background-color: #73a1ff !important;
+        border-color: #73a1ff !important;
+        color: white !important;
+      }
+      .storeActivBtn:active {
+        background-color: #73a1ff !important;
+        border-color: #73a1ff !important;
+        color: white !important;
+      }
+      .storeActivBtn:focus {
+        border-color: #73a1ff !important;
+        background-color: #73a1ff !important;
+        outline: 0;
+        box-shadow: 0 0 0 0rem #73a1ff !important;
+      }
+    
+      .storeSuspndBtn {
+        width: 100px;
+        background-color: #5dcfe3;
+        color: white;
+        border-color: #5dcfe3 !important;
+     
+      }
+      .storeSuspndBtn:hover {
+        background-color: #5dcfe3 !important;
+        border-color: #5dcfe3 !important;
+        color: white !important;
+      }
+      .storeSuspndBtn:active {
+        background-color: #5dcfe3 !important;
+        border-color: #5dcfe3 !important;
+        color: white !important;
+      }
+      .storeSuspndBtn:focus {
+        border-color: #5dcfe3 !important;
+        background-color: #5dcfe3 !important;
+        outline: 0;
+        box-shadow: 0 0 0 0rem #5dcfe3 !important;
+      }
+    
+    /* ************common style************ */
+    .modal-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1040;
+        width: 100vw;
+        height: 100vh;
+        background-color: #00000008 !important;
+    }
+    
+    
+    
