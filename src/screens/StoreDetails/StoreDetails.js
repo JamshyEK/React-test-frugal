@@ -5,13 +5,44 @@ import StoreViewModal from '../StoreDetails/StoreViewModel'
 
 class StoreDetails extends Component {
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       storeData: [],
       storeShow: false,
     }
   }
+    componentDidMount() {
+   
+      this.props.storeList()
+  
+
+    // try {
+    //   fetch("http://139.59.78.74:9400/api/v1/stores", {
+    //     method: 'GET',
+    //     headers: {
+    //       Accept: 'application/json',
+    //       'Content-Type': 'application/json',
+
+    //     }
+    //   })
+    //     .then(response => response.json())
+    //     .then(response => {
+    //       console.log("--------------------res", response.rows)
+    //       this.setState({
+    //         storeData: response.rows
+    //       })
+
+    //     })
+    // }
+
+    // catch (err) {
+      
+    // }
+
+
+  }
+  
 
   handleShowView = (item) => {
     this.setState({
@@ -24,33 +55,7 @@ class StoreDetails extends Component {
     this.setState({ storeShow: false })
   }
 
-  componentDidMount() {
 
-    try {
-      fetch("http://139.59.78.74:9400/api/v1/stores", {
-        method: 'GET',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-
-        }
-      })
-        .then(response => response.json())
-        .then(response => {
-          console.log("--------------------res", response.rows)
-          this.setState({
-            storeData: response.rows
-          })
-
-        })
-    }
-
-    catch (err) {
-      
-    }
-
-
-  }
 
 
   render() {
@@ -80,7 +85,7 @@ class StoreDetails extends Component {
                       </tr>
                     </thead>
                     <tbody>
-                      {this.state.storeData.map((item, i) => (
+                      {/* {this.state.storeData.map((item, i) => (
                         <tr key={i}>
                           <td>{i + 1}</td>
                           <td className="storeCap">{item.type}</td>
@@ -102,7 +107,7 @@ class StoreDetails extends Component {
 
                         </tr>
                       ))
-                      }
+                      } */}
 
                     </tbody>
                   </Table>
