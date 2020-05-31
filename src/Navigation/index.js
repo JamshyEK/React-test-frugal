@@ -3,8 +3,9 @@ import { BrowserRouter, Router, Route, Switch, HashRouter, Redirect } from 'reac
 import { createBrowserHistory } from 'history'
 import Dashboard from '../containers/DashboardContainer';
 import Login from '../containers/LoginContainer'
-import PoggyUsers from '../screens/PoggyUsers'
+// import PoggyUsers from '../screens/PoggyUsers'
 import DefaultLayout from '../containers/DefaultLayout'
+import PoggyLogin from '../components/PoggyLogin'
 
 var history = createBrowserHistory()
 // const Login = React.lazy(() => import('../components/Pages/Login'));
@@ -21,7 +22,7 @@ function AppNavigator() {
             <Route path='/dashboard' name='Dashboard' component={DefaultLayout} />
 
             {/* <Route path ='/login' component={Login}/> */}
-            <Route path='/PoggyLogin' component={PoggyUsers} />
+            <Route path='/PoggyLogin' component={PoggyLogin} />
             <Route path='/' name='Dashboard' component={DefaultLayout} />
         </Switch>
     )
