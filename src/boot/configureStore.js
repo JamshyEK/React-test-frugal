@@ -3,7 +3,8 @@ import thunk from 'redux-thunk'
 import {createLogger} from 'redux-logger'
 import {persistStore} from 'redux-persist'
 import createSagaMiddleware from 'redux-saga'
-import {connectRouterm, routerMiddleware} from 'connected-react-router'
+import { composeWithDevTools } from 'redux-devtools-extension';
+import {connectRouter , routerMiddleware} from 'connected-react-router'
 import * as History from 'history'
 
 import createRootReducer from '../reducers'
@@ -24,7 +25,7 @@ const initialState = {}
 
 export default function configureStore(onCompletion:()=>void):any{
     const enhancer = compose (
-        applyMiddleware(...middleware)
+        composeWithDevTools(applyMiddleware(...middleware))
     )
     const store =  createStore(createRootReducer(history), initialState, enhancer)
     sagaMiddleware.run(saga)

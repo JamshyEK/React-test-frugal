@@ -1,12 +1,16 @@
 import { call, all } from 'redux-saga/effects'
-import { locationActionWatcher } from '../containers/LocationContainer/saga'
-import { storeActionWatcher } from '../containers/StoreContainer/saga'
+import {watchDogData} from '../containers/DogContainer/saga'
+import {watchCatData} from '../containers/CatContainer/saga'
+import {watchUserData} from '../containers/UsersContainer/saga'
+
 
 function* rootSaga() {
     yield all([
-
-        call(locationActionWatcher),
-        call(storeActionWatcher)
+        console.log("sagatest"),
+        call(watchDogData),
+        call(watchCatData),
+        call(watchUserData)
+      
     ])
 }
 

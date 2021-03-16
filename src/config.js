@@ -5,12 +5,10 @@ const ipConfig = {
         env: development ? 'development' : 'production'
     },
     development: {
-        ip: 'http://139.59.78.74:9400/api/v1/',
-        imgServerip: 'http://139.59.78.74:9400/images'
+       
     },
     production: {
-        ip: 'http://139.59.78.74:9400/api/v1/',
-        imgServerip: 'http://139.59.78.74:9400/images'
+      
     }
 
 }

@@ -1,9 +1,9 @@
 import * as React from 'react'
 import {connect} from 'react-redux'
 
-import Login from '../../screens/Login'
+import Login from '../../components/Pages/Login'
 
-class LoginSection extends React.Component<Props, State>{
+class LoginSection extends React.Component{
     render(){
         return <Login/>
     }
